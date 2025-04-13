@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Minuman Belikopi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width: 100%;
+        }
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .recipe {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+        .recipe:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        .recipe h2 {
+            color: #1a237e;
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid #e3f2fd;
+        }
+        .ingredients, .instructions {
+            margin-top: 1.2rem;
+        }
+        .ingredients h3, .instructions h3 {
+            font-size: clamp(1rem, 3vw, 1.1rem);
+            color: #37474f;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+        }
+        ul, ol {
+            padding-left: 1.2rem;
+            margin-bottom: 0;
+            color: #546e7a;
+        }
+        ul li, ol li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+            h1 {
+                font-size: clamp(1.5rem, 6vw, 2rem);
+            }
+            .recipes-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 15px 0;
+            }
+            .recipe {
+                padding: 1.2rem;
+                margin-bottom: 0;
+            }
+            ul, ol {
+                padding-left: 1rem;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .recipes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1025px) {
+            .recipes-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resep Minuman Belikopi</h1>
+    </header>
+    <div class="container">
+        <div class="recipes-grid">
+            <!-- Resep 1 -->
+            <div class="recipe">
+                <h2>Kopi Susu Gula Aren</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml kopi hitam dingin</li>
+                        <li>100 ml susu full cream</li>
+                        <li>30 ml gula aren cair</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Tuang gula aren ke dasar gelas.</li>
+                        <li>Tambahkan es batu, lalu tuang susu.</li>
+                        <li>Terakhir, tuang kopi secara perlahan agar terlihat berlapis.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 2 -->
+            <div class="recipe">
+                <h2>Kopi Hitam</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>200 ml air panas</li>
+                        <li>2 sdm kopi bubuk</li>
+                        <li>Gula sesuai selera</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Seduh kopi dengan air panas.</li>
+                        <li>Saring dan sajikan panas atau dingin dengan es.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 3 -->
+            <div class="recipe">
+                <h2>Kopi Susu Bandung</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml susu kental manis stroberi</li>
+                        <li>100 ml susu cair</li>
+                        <li>50 ml kopi</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Campur susu stroberi dan susu cair.</li>
+                        <li>Tambahkan es batu dan tuang kopi di atasnya.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 4 -->
+            <div class="recipe">
+                <h2>Kopi Susu Nusantara</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml kopi tubruk kental</li>
+                        <li>100 ml susu evaporasi</li>
+                        <li>20 ml gula merah cair</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Campurkan gula merah dan susu evaporasi.</li>
+                        <li>Tambahkan es batu dan tuang kopi perlahan.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 5 -->
+            <div class="recipe">
+                <h2>Kopi Chocolate</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml susu cokelat</li>
+                        <li>50 ml kopi hitam</li>
+                        <li>Es batu</li>
+                        <li>Cokelat bubuk untuk topping</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Tuang susu cokelat dan es ke gelas.</li>
+                        <li>Tambahkan kopi dan taburi cokelat bubuk.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 6 -->
+            <div class="recipe">
+                <h2>Chocolate</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>200 ml susu full cream</li>
+                        <li>2 sdm bubuk cokelat</li>
+                        <li>1 sdm kental manis</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Larutkan bubuk cokelat dan kental manis dengan sedikit air panas.</li>
+                        <li>Tambahkan susu dan es.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 7 -->
+            <div class="recipe">
+                <h2>Kopi Avocado</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>½ buah alpukat matang</li>
+                        <li>100 ml susu cair</li>
+                        <li>30 ml kental manis</li>
+                        <li>50 ml espresso atau kopi hitam</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Blender alpukat, susu, dan kental manis hingga halus.</li>
+                        <li>Tuang ke gelas, tambahkan es, dan tuang kopi perlahan.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 8 -->
+            <div class="recipe">
+                <h2>Avocado</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>1 buah alpukat</li>
+                        <li>100 ml susu cair</li>
+                        <li>2 sdm kental manis</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Blender semua bahan hingga halus.</li>
+                        <li>Sajikan dengan topping cokelat leleh (opsional).</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 9 -->
+            <div class="recipe">
+                <h2>Americano</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>1 shot espresso</li>
+                        <li>150 ml air dingin</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Campur semua bahan ke dalam gelas dan aduk.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 10 -->
+            <div class="recipe">
+                <h2>Caramel Susu</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>150 ml susu full cream</li>
+                        <li>2 sdm saus caramel</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Aduk saus caramel dan susu, tuang ke gelas dengan es.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 11 -->
+            <div class="recipe">
+                <h2>Caramel Macchiato</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml susu cair dingin</li>
+                        <li>50 ml espresso</li>
+                        <li>20 ml sirup vanilla</li>
+                        <li>20 ml saus caramel</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Tuang sirup vanilla ke dasar gelas.</li>
+                        <li>Tambahkan es dan susu.</li>
+                        <li>Tuang espresso perlahan.</li>
+                        <li>Tambahkan saus caramel di atasnya.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 12 -->
+            <div class="recipe">
+                <h2>Cheese Milk Tea</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>1 kantong teh hitam</li>
+                        <li>150 ml air</li>
+                        <li>100 ml susu cair</li>
+                        <li>1 sdm kental manis</li>
+                        <li>Foam cheese</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Seduh teh dan dinginkan.</li>
+                        <li>Campur dengan susu dan es.</li>
+                        <li>Tambahkan foam cheese di atasnya.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 13 -->
+            <div class="recipe">
+                <h2>Hazelnut Latte</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml susu</li>
+                        <li>50 ml kopi</li>
+                        <li>1 sdm sirup hazelnut</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Campur semua bahan dan sajikan dingin.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 14 -->
+            <div class="recipe">
+                <h2>Vanilla Latte</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml susu</li>
+                        <li>50 ml kopi</li>
+                        <li>1 sdm sirup vanilla</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Campur semua bahan dan sajikan dengan es.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 15 -->
+            <div class="recipe">
+                <h2>Cappuccino</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>1 shot espresso</li>
+                        <li>100 ml susu steamed</li>
+                        <li>Foam susu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Tuang espresso, lalu susu, dan tambahkan foam.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 16 -->
+            <div class="recipe">
+                <h2>Kopi Milo</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml kopi</li>
+                        <li>2 sdm bubuk Milo</li>
+                        <li>100 ml susu</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Campur Milo dan susu dengan es.</li>
+                        <li>Tambahkan kopi di atasnya.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 17 -->
+            <div class="recipe">
+                <h2>Milo Boba</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml susu</li>
+                        <li>2 sdm Milo</li>
+                        <li>Boba matang</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Taruh boba di dasar gelas.</li>
+                        <li>Campur Milo dan susu, lalu tuang ke atas boba.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 18 -->
+            <div class="recipe">
+                <h2>Milo Macchiato</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml susu cair</li>
+                        <li>2 sdm bubuk Milo</li>
+                        <li>1 sdt gula</li>
+                        <li>50 ml kopi hitam</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Larutkan Milo dan gula dengan sedikit air panas.</li>
+                        <li>Tambahkan es, susu, dan tuang kopi di atasnya.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 19 -->
+            <div class="recipe">
+                <h2>Kopi Jelly Gula Aren</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml kopi</li>
+                        <li>100 ml susu</li>
+                        <li>30 ml gula aren</li>
+                        <li>Jelly kopi atau cincau</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Masukkan jelly ke gelas.</li>
+                        <li>Tambahkan es, susu, dan kopi.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 20 -->
+            <div class="recipe">
+                <h2>Cookies & Cream</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>100 ml susu</li>
+                        <li>2 sdm bubuk Oreo</li>
+                        <li>1 sdm kental manis</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Blender semua bahan hingga halus.</li>
+                        <li>Sajikan dingin.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 21 -->
+            <div class="recipe">
+                <h2>Matcha</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>1 sdt bubuk matcha</li>
+                        <li>100 ml susu</li>
+                        <li>1 sdm kental manis</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Larutkan matcha dengan sedikit air panas.</li>
+                        <li>Campur dengan susu dan es.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 22 -->
+            <div class="recipe">
+                <h2>Petite Mangga</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>Jus mangga 100 ml</li>
+                        <li>2 sdm kental manis</li>
+                        <li>Jelly / nata de coco</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Campur semua bahan ke dalam gelas.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Resep 23 -->
+            <div class="recipe">
+                <h2>Strawberry</h2>
+                <div class="ingredients">
+                    <h3>Bahan:</h3>
+                    <ul>
+                        <li>2 sdm sirup stroberi</li>
+                        <li>100 ml susu</li>
+                        <li>Es batu</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Cara:</h3>
+                    <ol>
+                        <li>Campur bahan dan sajikan dengan es.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
